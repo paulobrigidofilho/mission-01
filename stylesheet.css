@@ -10,7 +10,8 @@ body {
     margin: 0;
     background-color: black;
     color: darkkhaki;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;                                                                                                                                                                                                                                           
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;                                                                                                                                                                                                                                           
 }
 
 main {
@@ -91,9 +92,10 @@ nav > a:hover {
 /* ===== ARTWORK ===== */
 
 .orbisgal {
+    margin-top: 10vh;
     flex-direction: row;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
 div.gallery {
@@ -123,13 +125,44 @@ div.desc {
     padding: 4px 8px 8px 8px;
 }
 
+/* ===== ABOUT US DIV ===== */
+
+#aboutUs {
+    background-color: rgba(47, 47, 23, 0.934);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+}
+
+.usImg {
+    flex-direction: column;
+}
+
+.usImg > h1 {
+    text-align: center;
+}
+
+.usImg > img {
+    margin-top: -2vh;
+    text-align: center;
+}
+
+div > p {
+    text-align: justify;
+    margin-left: 1vh;
+    margin-top: 4vh;
+    font-size: 16px;
+    max-width: 120vh;
+}
+
 /* ===== SEND US E-MAIL DIV ===== */
 
 #emailForm {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15px ;
     }
 
 input[type="text"], input[type="email"] {
@@ -152,6 +185,7 @@ textarea {
 }
 
 legend {
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
@@ -196,7 +230,7 @@ input[type=submit]:hover {
 
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 p > a {
@@ -205,4 +239,14 @@ p > a {
 
 p > a:hover {
     color: rgb(230, 221, 105);
+}
+
+/* ===== Media Queries ===== */
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

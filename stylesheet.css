@@ -60,6 +60,79 @@ nav > a:hover {
     margin-bottom: 20px;
 }    
 
+/* ====== BLOG AND ARTICLES ====== */
+
+/* WHOLE POST BOX RULES */
+
+#blog {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.postBlog {
+    border-radius: 3px;
+    border: 2px solid darkkhaki;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+    flex-wrap: wrap;
+}
+
+/* POST TITLE, AUTHOR AND DATE */
+
+.author {
+    background-color: rgba(47, 47, 23, 0.934);
+    display: flex;
+    flex-direction: column;
+}
+
+.author > h2, h3, h4 {
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.author > h3 {
+    font-style: italic;
+}
+
+.author > p {
+    text-align: justify;
+    margin-left: 0px;
+    padding: 12px;
+}
+
+/* INTERACTION NAV */
+
+.interactionNav {
+    border: 2px solid darkkhaki;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.interactionNav > p {
+    height: 30px;
+    margin-right: -20vh;
+}
+
+
+/* COMMENT SECTION */
+
+/* .commentsSec {
+    background-color: rgba(97, 97, 63, 0.934);
+    color: rgb(204, 199, 114);
+    display: flex;
+} */
+
+
+
+
 
 /* ===== ANIMATION ===== */
 
@@ -160,6 +233,7 @@ div > p {
 /* ===== SEND US E-MAIL DIV ===== */
 
 #emailForm {
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;

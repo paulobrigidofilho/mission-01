@@ -111,28 +111,15 @@ nav > a:hover {
     border-right: 0px;
     border-bottom: 0px;
     display: flex;
-    height: 30px;
+    height: 40px;
     align-items: center;
     justify-content: space-around;
 }
 
 .interactionNav > p {
-    height: 30px;
+    height: 31px;
     margin-right: -20vh;
 }
-
-
-/* COMMENT SECTION */
-
-/* .commentsSec {
-    background-color: rgba(97, 97, 63, 0.934);
-    color: rgb(204, 199, 114);
-    display: flex;
-} */
-
-
-
-
 
 /* ===== ANIMATION ===== */
 

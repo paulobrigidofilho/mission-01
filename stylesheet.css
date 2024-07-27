@@ -11,6 +11,7 @@ body {
     background-color: black;
     color: darkkhaki;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Merriweather", serif;
     min-height: 100vh;                                                                                                                                                                                                                                           
 }
 
@@ -68,7 +69,10 @@ nav > a:hover {
     margin-top: 5vh;
     margin-bottom: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 30px;    
 }
 
 .postBlog {
@@ -76,8 +80,20 @@ nav > a:hover {
     border: 2px solid darkkhaki;
     display: flex;
     flex-direction: column;
-    max-width: 100vh;
+    /* max-width: 100vh; */
     flex-wrap: wrap;
+}
+
+#moreArticles {
+    color: darkkhaki;
+    background-color: rgba(47, 47, 23, 0.934);
+    border: 2px solid darkkhaki;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 1vh;
+    border-radius: 3px;
+    margin-top: 2vh;
 }
 
 /* POST TITLE, AUTHOR AND DATE */
@@ -97,10 +113,18 @@ nav > a:hover {
     font-style: italic;
 }
 
-.author > p {
+.articleCont {
     text-align: justify;
     margin-left: 0px;
     padding: 12px;
+}
+
+#viewsData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 12px;
+    gap: 4px;
 }
 
 /* INTERACTION NAV */
@@ -110,15 +134,21 @@ nav > a:hover {
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;
-    display: flex;
-    height: 40px;
-    align-items: center;
-    justify-content: space-around;
+    display:flex;
 }
 
-.interactionNav > p {
-    height: 31px;
-    margin-right: -20vh;
+.button {
+    font-size: 20px;
+    align-items: center;
+    background-color: black;
+    color: darkkhaki;
+    border: 0px;
+    padding: 1vh;
+    margin-left: 4px;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 /* ===== ANIMATION ===== */
@@ -266,6 +296,7 @@ fieldset {
 /* ===== SUBMIT BUTTON ===== */
 
 input[type=submit] {
+    font-family: "Merriweather", serif;
     border: 2px solid darkkhaki;
     background-color: black;
     padding: 8px 2px;

@@ -72,7 +72,9 @@ nav > a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;    
+    gap: 30px;
+    margin-right: 2.5px;
+    margin-left: 3px;    
 }
 
 .postBlog {
@@ -224,6 +226,8 @@ div.desc {
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 6vh;
+    margin-right: 3px;
+    margin-left: 3px;    
 }
 
 .usImg {
@@ -241,7 +245,8 @@ div.desc {
 
 div > p {
     text-align: justify;
-    margin-left: 1vh;
+    padding: 4px;
+    margin-right: 1px;
     margin-top: 4vh;
     font-size: 16px;
     max-width: 120vh;

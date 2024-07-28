@@ -130,6 +130,10 @@ nav > a:hover {
     margin-right: 10px;
 }
 
+.pageBut:hover {
+    background-color:rgba(32, 32, 19, 0.934);
+}
+
 /* POST TITLE, AUTHOR AND DATE */
 
 .author {

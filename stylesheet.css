@@ -56,9 +56,9 @@ nav > a:hover {
 
 #bottom {
     display:flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 4px;
 }    
 
 /* ===== INDEX PAGE ANIMATION ===== */
@@ -103,6 +103,10 @@ nav > a:hover {
     gap: 30px;
     margin-right: 2.5px;
     margin-left: 3px;    
+}
+
+#blog > h1 {
+    font-size: 30px;
 }
 
 .postBlog {

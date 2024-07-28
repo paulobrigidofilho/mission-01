@@ -67,7 +67,7 @@ nav > a:hover {
     margin-top: 30px;
     align-self: flex-end;
     animation-duration: 2s;
-    animation-iteration-count: 3;
+    animation-iteration-count:infinite;
     height: 200px;
     margin: 0 auto 0 auto;
     transform-origin: bottom;
@@ -183,8 +183,14 @@ nav > a:hover {
 
 /* ===== ARTWORK ===== */
 
+#galleryHead {
+    font-size: 24px;
+    margin-top: 5vh;
+    text-align: center;
+}
+
 .orbisgal {
-    margin-top: 10vh;
+    margin-top: 4vh;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -255,30 +261,11 @@ div > p {
 /* ===== SEND US E-MAIL DIV ===== */
 
 #emailForm {
-    margin-top: 5vh;
+    margin-top: 3vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     }
-
-input[type="text"], input[type="email"] {
-    padding: 2px 2px;
-    margin: 8px 0;
-    width: 300px;
-}
-
-input[type="email"] {
-    margin-top: 8px;
-    width: 340px;
-}
-
-textarea {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2px 2px;
-    margin: 8px 0px;
-    width: 405px;
-    height: 200px;
-}
 
 legend {
     text-align: center;
@@ -294,13 +281,52 @@ fieldset {
     margin-bottom: 30px;
     }
 
-#labelmessage {
-    margin-left: 155px;
+/* ===== FORM INPUTS ===== */
+
+input[type="text"] {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Merriweather", serif;
+    padding: 2px 2px;
+    margin: 8px 0px;
+    width: 200px;
+    height: 32px;
+    
+}
+
+#lastName {
+    margin-left: 3.1px;
+}
+
+
+input[type="email"] {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Merriweather", serif;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    width: 274px;
+    height: 32px;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+textarea {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Merriweather", serif;
+    padding: 5px 5px;
+    margin: 8px 0px;
+    width: 345px;
+    height: 250px;
 }
 
 /* ===== SUBMIT BUTTON ===== */
 
 input[type=submit] {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-family: "Merriweather", serif;
     border: 2px solid darkkhaki;
     background-color: black;
@@ -311,7 +337,7 @@ input[type=submit] {
     color: darkkhaki;
     text-align: center;
     border-radius: 3px;
-    margin-left: 155px;
+    margin-bottom: 10px;
 }
 
 input[type=submit]:hover {

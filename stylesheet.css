@@ -44,7 +44,7 @@ nav > a:hover {
     cursor: pointer;
 }
 
-/* ===== INDEX PAGE ===== */
+/* ===== INDEX PAGE - INTRODUCTION AND QUOTE OF THE DAY ===== */
 
 #top {
     display: flex;
@@ -60,6 +60,34 @@ nav > a:hover {
     text-align: center;
     margin-bottom: 20px;
 }    
+
+/* ===== INDEX PAGE ANIMATION ===== */
+
+.box {
+    margin-top: 30px;
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    height: 200px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 200px;
+}
+
+.bounce-5 {
+    animation-name: bounce-5;
+    animation-timing-function: ease;
+}
+@keyframes bounce-5 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(+50px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(+7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
 
 /* ====== BLOG AND ARTICLES ====== */
 
@@ -152,34 +180,6 @@ nav > a:hover {
 .button:hover {
     cursor: pointer;
 }
-
-/* ===== ANIMATION ===== */
-
-.box {
-    margin-top: 30px;
-    align-self: flex-end;
-    animation-duration: 2s;
-    animation-iteration-count: 3;
-    height: 200px;
-    margin: 0 auto 0 auto;
-    transform-origin: bottom;
-    width: 200px;
-}
-
-.bounce-5 {
-    animation-name: bounce-5;
-    animation-timing-function: ease;
-}
-@keyframes bounce-5 {
-    0%   { transform: scale(1,1)    translateY(0); }
-    10%  { transform: scale(1.1,.9) translateY(0); }
-    30%  { transform: scale(.9,1.1) translateY(+50px); }
-    50%  { transform: scale(1,1)    translateY(0); }
-    57%  { transform: scale(1,1)    translateY(+7px); }
-    64%  { transform: scale(1,1)    translateY(0); }
-    100% { transform: scale(1,1)    translateY(0); }
-}
-
 
 /* ===== ARTWORK ===== */
 

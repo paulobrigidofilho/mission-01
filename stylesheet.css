@@ -211,7 +211,8 @@ div.gallery {
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid darkkhaki;
+    border: 2px solid darkkhaki;
+    border-radius: 3px;
 }
   
 div.gallery:hover {

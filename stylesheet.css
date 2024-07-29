@@ -211,7 +211,7 @@ div.gallery {
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid darkkhaki;
 }
   
 div.gallery:hover {
@@ -221,14 +221,15 @@ div.gallery:hover {
 }
   
 div.gallery img {
-    width: 40vh;
-    height: 40vh;
+    width: 30vh;
+    height: 30vh;
 }
   
 div.desc {
+    justify-content: center;
     text-align: center;
     font-size: 14px;
-    padding: 4px 8px 8px 8px;
+    padding: 6px 8px 8px 8px;
 }
 
 /* ===== ABOUT US DIV ===== */

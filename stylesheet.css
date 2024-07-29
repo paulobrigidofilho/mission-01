@@ -215,9 +215,7 @@ div.gallery {
 }
   
 div.gallery:hover {
-    border: 1px solid #777;
-    background-color: darkkhaki;
-    color: black;
+    background-color: rgb(31, 30, 22);
 }
   
 div.gallery img {

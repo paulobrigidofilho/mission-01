@@ -207,10 +207,10 @@ h4 {
 /* ===== ARTWORK ICONS / BUTTONS ===== */
 
 nav.galleryNav {
-    background-color: black;
-    margin-bottom: 20px;
-    width: auto;
-    flex-wrap: wrap;
+  background-color: black;
+  margin-bottom: 20px;
+  width: auto;
+  flex-wrap: wrap;
 }
 
 #galleryHead {
@@ -355,6 +355,9 @@ div.artHistory {
   flex-direction: column;
   padding: 0px 12px 12px 11px;
   width: 120vh;
+  border: 2px solid darkkhaki;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 div.artHistory > h1 {
@@ -368,6 +371,7 @@ div.artHistory > h1 {
 CHART | LEANDER | GODS | RIVALS ===== */
 
 #artChart {
+  margin-top: 0.5px;
   background-color: rgba(47, 47, 23, 0.934);
   display: flex;
   flex-wrap: wrap;
@@ -379,14 +383,14 @@ CHART | LEANDER | GODS | RIVALS ===== */
   display: flex;
   flex-direction: column;
   width: 40vh;
-  height: 35vh;
+  height: 36vh;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .chartSquare > img {
   height: 24vh;
+  width: 24vh;
   margin-top: 6vh;
 }
 
@@ -635,7 +639,6 @@ p > a:hover {
   #artDescription > p {
     font-size: 16px;
     text-align: center;
-    
   }
 
   /* THIRD INFO - ART HISTORY */
@@ -650,11 +653,15 @@ p > a:hover {
   #artChart {
     align-items: center;
     justify-items: center;
-    width: 351px;   
+    flex-direction: column;
+    height: fit-content;
+    width: 351px;
   }
 
   .chartSquare {
     margin-left: 0vh;
+    justify-content: center;
+    align-items: center;
   }
 
   .chartSquare > h1 {

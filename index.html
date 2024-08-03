@@ -1,178 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="app.js"></script>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="app.js"></script>
+    <title>Orbis History Maps</title>
+  </head>
 
-        <title>Orbis History Maps</title>
-    </head>
+  <!-- ======= THIS IS THE INDEX PAGE ======== -->
 
-<!-- ======= THIS IS THE INDEX PAGE ======== -->
-
-<!-- ====== NAVIGATION BAR ====== -->
-    <body>
-        <header>            
-                            
-            <nav>  
-                <a href="index.html">Home</a>
-                <a href="artwork.html">Artwork</a>
-                <a href="store.html">Store</a>
-                <a href="send-message.html">Send Your Message</a>
-            </nav>
-
-        </header>
+  <!-- ====== NAVIGATION BAR ====== -->
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="artwork.html">Artwork</a>
+        <a href="store.html">Store</a>
+        <a href="send-message.html">Send Your Message</a>
+      </nav>
+    </header>
 
     <!-- ====== MAIN PAGE ====== -->
 
-        <main id="mainpage">
+    <main id="mainpage">
+      <!-- ====== TOP - INTRODUCTION Section of Webpage ====== -->
 
-    <!-- ====== TOP - INTRODUCTION Section of Webpage ====== -->
+      <section id="top">
+        <article>
+          <h1>Welcome to Orbis History Maps</h1>
 
-            <section id="top">
-                <article>
+          <p>If you like maps and history, this is your place!</p>
+          <img
+            class="box bounce-5"
+            src="imgs/banners/orbislogo.png"
+            alt="Orbis History Maps Logo"
+            width="200"
+            height="200"
+          />
+        </article>
+      </section>
 
-                    <h1>Welcome to Orbis History Maps</h1>
-                    
-                    <p>If you like maps and history, this is your place!</p>
-                    <img class="box bounce-5" src="imgs/banners/orbislogo.png" alt="Orbis History Maps Logo" width="200" height="200">
+      <!-- ====== BOTTOM - QUOTE OF THE MONTH Section of Webpage ====== -->
 
-                </article>
+      <section id="bottom">
+        <article>
+          <h2>Quote of the month</h2>
+          <p>
+            "Waste no more time arguing about what a good man should be. Be
+            one." - Marcus Aurelius
+          </p>
+        </article>
+      </section>
 
-            </section>
+      <!-- ====== BLOG AND ARTICLES ====== -->
+
+      <section id="blog">
+        <h1>Newsletter</h1>
+
+        <article class="postBlog">
+          <div class="articleDiv">
+            <h2 class="articleTitle">Subject</h2>
+            <h3 class="articleAuthor">by Orbis</h3>
+            <h4 class="articleDate">Date</h4>
+            <p class="articleCont">
+              "At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus id quod
+              maxime placeat facere possimus, omnis voluptas assumenda est,
+              omnis dolor repellendus. Temporibus autem quibusdam et aut
+              officiis debitis aut rerum necessitatibus saepe eveniet ut et
+              voluptates repudiandae sint et molestiae non recusandae. Itaque
+              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+              voluptatibus maiores alias consequatur aut perferendis doloribus
+              asperiores repellat."
+            </p>
+            <p id="viewsData">
+              0
+              <i class="fa-regular fa-eye"></i>
+            </p>
+          </div>
+
+          <!-- ===== INTERACTION NAV BAR ===== -->
+
+          <div class="interactionNav">
+            <button class="button" id="likesData">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+
+            <button class="button" id="commentsData">
+              <i class="fa-regular fa-comment"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="postBlog">
+          <div class="articleDiv">
+            <h2 class="articleTitle">Subject</h2>
+            <h3 class="articleAuthor">by Orbis</h3>
+            <h4 class="articleDate">Date</h4>
+            <p class="articleCont">
+              "At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus id quod
+              maxime placeat facere possimus, omnis voluptas assumenda est,
+              omnis dolor repellendus. Temporibus autem quibusdam et aut
+              officiis debitis aut rerum necessitatibus saepe eveniet ut et
+              voluptates repudiandae sint et molestiae non recusandae. Itaque
+              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+              voluptatibus maiores alias consequatur aut perferendis doloribus
+              asperiores repellat."
+            </p>
+            <p id="viewsData">
+              0
+              <i class="fa-regular fa-eye"></i>
+            </p>
+          </div>
+
+          <!-- ===== INTERACTION NAV BAR ===== -->
+
+          <div class="interactionNav">
+            <button class="button" id="likesData">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+
+            <button class="button" id="commentsData">
+              <i class="fa-regular fa-comment"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- ===== END OF PAGE NAV BAR ===== -->
+
+        <div>
+          <button class="pageBut">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button onclick="topFunction()" class="pageBut">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
         
-    <!-- ====== BOTTOM - QUOTE OF THE MONTH Section of Webpage ====== -->
-        
-            <section id="bottom">
-                <article>
+      </section>
+    </main>
 
-                    <h2>Quote of the month</h2>
-                    <p>"Waste no more time arguing about what a good man should be. Be one." - Marcus Aurelius</p>
-
-                </article>
-
-            </section>
-
-    <!-- ====== BLOG AND ARTICLES ====== -->
-
-            <section id="blog">
-
-                <h1>Newsletter</h1>
-
-                <article class="postBlog">
-
-                    <div class="author">
-                        <h2 class="articleTitle">Subject</h2>
-                        <h3 class="articleAuthor">by Orbis</h3>
-                        <h4 class="articleDate">Date</h4>
-                        <p class="articleCont">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-                        <p id="viewsData">0
-                            <i class="fa-regular fa-eye"></i>
-                        </p>
-                    </div>
-                
-                <!-- ===== INTERACTION NAV BAR ===== -->
-                    
-                    <div class="interactionNav">
-                        
-                        <button class="button" id="likesData">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                        </button>
-
-                        <button class="button" id="commentsData">
-                            <i class="fa-regular fa-comment"></i>
-                        </button>    
-
-                    </div>
-                </article>   
-
-                <article class="postBlog">
-
-                    <div class="author">
-                        <h2 class="articleTitle">Subject</h2>
-                        <h3 class="articleAuthor">by Orbis</h3>
-                        <h4 class="articleDate">Date</h4>
-                        <p class="articleCont">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-                        <p id="viewsData">0
-                            <i class="fa-regular fa-eye"></i>
-                        </p>
-                    </div>
-                
-                <!-- ===== INTERACTION NAV BAR ===== -->
-                      
-                    <div class="interactionNav">
-                        
-                        <button class="button" id="likesData">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                        </button>
-
-                        <button class="button" id="commentsData">
-                            <i class="fa-regular fa-comment"></i>
-                        </button>    
-
-                    </div>
-                </article>  
-
-                <article class="postBlog">
-
-                    <div class="author">
-                        <h2 class="articleTitle">Subject</h2>
-                        <h3 class="articleAuthor">by Orbis</h3>
-                        <h4 class="articleDate">Date</h4>
-                        <p class="articleCont">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-                        <p id="viewsData">0
-                            <i class="fa-regular fa-eye"></i>
-                        </p>
-                    </div>
-                
-                <!-- ===== INTERACTION NAV BAR ===== -->
-                      
-                    <div class="interactionNav">
-                        
-                        <button class="button" id="likesData">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                        </button>
-
-                        <button class="button" id="commentsData">
-                            <i class="fa-regular fa-comment"></i>
-                        </button>    
-
-                    </div>
-                </article>  
-                
-                
-                <!-- ===== END OF PAGE NAV BAR ===== -->
-                  
-
-                <div>
-                    <button class="pageBut">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-    
-                    <button onclick="topFunction()" class="pageBut">
-                        <i class="fa-solid fa-arrow-up"></i>
-                    </button>
-                </div>
-                
-
-            </section>
-
-        </main>          
-            
     <!-- ====== FOOTER ====== -->
 
     <footer>
-        <p>&copy; 2021 - Orbis History Maps
-            <a target="_blank" href="https://instagram.com/orbishistorymaps"><i class="fa-brands fa-square-instagram fa-lg"></i>
-            </a>
-        </p>        
+      <p>
+        &copy; 2021 - Orbis History Maps
+        <a target="_blank" href="https://instagram.com/orbishistorymaps"
+          ><i class="fa-brands fa-square-instagram fa-lg"></i>
+        </a>
+      </p>
     </footer>
-
-    </body>
+  </body>
 </html>

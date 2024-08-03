@@ -342,14 +342,6 @@ div.artInfoFirst {
   width: auto;
 }
 
-#artImg > p {
-  /* background-color: yellow; */
-  font-weight: bold;
-  position: absolute;
-  margin: 0px;
-  margin-left: 17vh;
-}
-
 /* ART DESCRIPTION */
 
 #artDescription {
@@ -379,13 +371,13 @@ div.artHistory {
   border: 2px solid darkkhaki;
   border-left: 0px;
   border-right: 0px;
+  border-bottom: 0px;
 }
 
 div.artHistory > h1 {
   text-shadow: 2px 2px black;
   text-align: center;
   margin-top: 4vh;
-  margin-bottom: 0px;
 }
 
 /* ===== ART FOURTH INFO - 
@@ -396,6 +388,10 @@ CHART | LEANDER | GODS | RIVALS ===== */
   background-color: rgba(47, 47, 23, 0.934);
   display: flex;
   flex-wrap: wrap;
+  width: max-content;
+  border: 2px solid darkkhaki;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 .chartSquare {
@@ -422,10 +418,12 @@ CHART | LEANDER | GODS | RIVALS ===== */
 }
 
 .chartSquare > p {
+  text-align: center;
   font-size: 18px;
   margin: 0px;
   margin-top: 12px;
-  margin-bottom: -16px;
+  margin-bottom: -20px;
+  padding: 8px;
 }
 
 /* ===== ART BUTTON ADD IT TO CART ===== */

@@ -130,6 +130,8 @@ nav > a:hover {
   flex-wrap: wrap;
 }
 
+/* ===== PAGE BUTTONS ===== */
+
 .pageBut {
   color: darkkhaki;
   background-color: rgba(47, 47, 23, 0.934);
@@ -141,6 +143,7 @@ nav > a:hover {
   border-radius: 3px;
   margin-top: 2vh;
   margin-right: 10px;
+  margin-bottom: 5vh;
 }
 
 .pageBut:hover {
@@ -190,7 +193,7 @@ h4 {
   display: flex;
 }
 
-.button {
+.interactionBut {
   font-size: 20px;
   align-items: center;
   background-color: black;
@@ -200,18 +203,22 @@ h4 {
   margin-left: 4px;
 }
 
-.button:hover {
+.interactionBut:hover {
   cursor: pointer;
 }
 
-/* ===== ARTWORK ICONS / BUTTONS ===== */
+/* ===== NAV AND HEAD - ARTWORK | ICONS / BUTTONS ===== */
 
-nav.galleryNav {
-  background-color: black;
-  margin-bottom: 20px;
-  width: auto;
-  flex-wrap: wrap;
-}
+/* GENERAL RULES */
+
+.orbisGal {
+    margin-top: 4vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* TITLE */
 
 #galleryHead {
   font-size: 50px;
@@ -220,16 +227,19 @@ nav.galleryNav {
   text-align: center;
 }
 
-.orbisGal {
-  margin-top: 4vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+nav.galleryNav {
+  background-color: black;
+  margin-bottom: 20px;
+  width: auto;
+  flex-wrap: wrap;
 }
 
-div.galleryBut {
+/* NAV ART BUTTONS */
+
+button.galleryBut {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 20px;
@@ -239,18 +249,20 @@ div.galleryBut {
   background-color: rgba(47, 47, 23, 0.934);
 }
 
-div.galleryBut:hover {
+button.galleryBut:hover {
   background-color: rgb(24, 23, 18);
 }
 
-div.galleryBut img {
+button.galleryBut img {
   width: 20vh;
   height: auto;
 }
 
-div.desc {
-  justify-content: center;
-  text-align: center;
+button.galleryBut > div.desc {
+  color: darkkhaki;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Merriweather", serif;
+  text-shadow: 2px 2px black;
   font-size: 14px;
   padding: 6px 8px 8px 8px;
 }
@@ -267,7 +279,7 @@ section.artInformation {
   border-radius: 3px;
   border: 2px solid darkkhaki;
   flex-wrap: wrap;
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 
 /* ===== ART FIRST INFO - TITLE AND SYMBOL ===== */
@@ -315,6 +327,14 @@ div.artInfoFirst {
   border: 2px solid darkkhaki;
 }
 
+#artImg > a:hover {
+    border: 2px solid rgb(117, 114, 65);
+}
+
+#artImg > a > img:hover {
+    opacity: 0.3;
+}
+
 #artImg > a > img {
   display: flex;
   position: relative;
@@ -323,7 +343,8 @@ div.artInfoFirst {
 }
 
 #artImg > p {
-  background-color: yellow;
+  /* background-color: yellow; */
+  font-weight: bold;
   position: absolute;
   margin: 0px;
   margin-left: 17vh;
@@ -420,6 +441,10 @@ CHART | LEANDER | GODS | RIVALS ===== */
   border: 0px;
   margin-top: 25px;
   margin-bottom: 15px;
+}
+
+.buttonAddCart:hover {
+  background-color: rgb(238, 36, 36);
 }
 
 /* ===== SEND US E-MAIL DIV ===== */
@@ -597,7 +622,7 @@ p > a:hover {
   }
 
   #galleryHead {
-    font-size: 38px;
+    font-size: 34px;
     margin-bottom: 20px;
   }
 

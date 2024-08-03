@@ -35,51 +35,139 @@
 
     <main class="orbisGal">
 
+    <!-- ====== GALLERY NAVIGATOR ====== -->    
+
         <nav class="galleryNav">
 
-            <div class="galleryBut">
-                <a target="_blank" href="imgs/art/sumer-min.jpg">
+            <button class="galleryBut">
+                <a onClick="document.getElementById('sectionSumer').scrollIntoView();">
                     <img src="imgs/icons/iconSumer.png" alt="Sumer & Akkad Map">
                 </a>
                 <div class="desc">Sumer & Akkad </br>Map</div>
-            </div>
+            </button>
     
-            <div class="galleryBut">
+            <button class="galleryBut">
                     <a target="_blank" href="imgs/art/egypt-min.jpg">
                         <img src="imgs/icons/iconEgypt.png" alt="Egypt & Kush Kingdoms Map">
                     </a>
                     <div class="desc">Egypt & Kush </br>Kingdoms Map</div>
-            </div>
+            </button>
     
-            <div class="galleryBut">
-                <a target=# href=#>
+            <button class="galleryBut">
+                <a onClick="document.getElementById('sectionAssyria').scrollIntoView();">
                     <img src="imgs/icons/iconAssyria.png" alt="Assyrian Empire Map">
                 </a>
                 <div class="desc">Assyrian Empire </br>Map</div>
-            </div>
+            </button>
     
-            <div class="galleryBut">
+            <button class="galleryBut">
                 <a target="_blank" href="imgs/art/clash-min.jpg">
                     <img src="imgs/icons/iconHit.png" alt="Achaeans vs Hittite Empire Map">
                 </a>
                 <div class="desc">Achaeans vs Hittite</br> Empire Map</div>
-            </div>  
+            </button>  
                 
-            <div class="galleryBut">
+            <button class="galleryBut">
                     <a target="_blank" href="imgs/art/newzealand-min.jpg">
                         <img src="imgs/icons/IconNZ.png" alt="New Zealand Map">
                     </a>
                     <div class="desc">New Zealand </br>Map</div>
-            </div>
+            </button>
 
         </nav>
         
+        <!-- ===== HEAD OF SECTION ===== -->
         
         <h1 id="galleryHead">Orbis History Maps</h1>
+
+        <!-- ===== SUMERIAN HISTORY SECTION ===== -->
+
+        <section class="artInformation">
+
+            <div class="artTitle" id="sectionSumer">
+                <img src="imgs/icons/iconSumer.png">
+                <h1>The First Empire: Sumer & Akkad</h1>
+            
+            </div>
+            
+            <div class="artInfoFirst">
+                
+                <div id="artImg">
+                    <a target="_blank" href="imgs/art/sumer-min.jpg">
+                    <img src="imgs/art/sumer-min.jpg" alt="Sumer & Akkad Map">
+                    </a>
+                    <p>Click to Enlarge</p>
+                </div>
+
+                <div id="artDescription">
+                    <p>Title: "Sumer and Akkad Map"</p>
+                    <p>Timeline: 2900 – 2004 BCE</p>
+                    <p>Epoque: Bronze Age</p>
+                    <p>Format: A2 (420 x 594 mm)</p>
+                    <p>Resolution: 7016 x 4961 pixels 300 dpi</p>
+                </div>
+
+            </div>
+            
+            <div class="artHistory" >
+                <h1>Short History</h1>
+                <p>
+                    The Sumerians, an ancient Mesopotamian people, are known for establishing one of the earliest and most influential civilizations in the world. Originating in southern Mesopotamia, now modern-day Iraq, they achieved notable advancements including the creation of the first writing system (cuneiform), the invention of the wheel, and the establishment of complex city-states.
+                    </br></br>
+                    The Sumerian civilization arose around 4,100 BCE, originating from the Ubaid culture in the southern region of the Fertile Crescent, where the Tigris and Euphrates rivers converge.
+                    </br></br>
+                    The Akkadians, who were the first speakers of a Semitic language in Mesopotamia, are recognized as the creators of the world's first empire.
+                    </br></br>
+                    They initially settled in the northern region of Mesopotamia, specifically in Akkad, and excelled in farming and herding, eventually gaining control of the area.
+                    </br></br>
+                    The city of Agade, founded around 2334 BCE by Sargon of Akkad, played a crucial role in the establishment of the Akkadian Empire and became its capital. Sargon, a skilled military leader and administrator, swiftly conquered all the city-states of Sumer and Akkad, solidifying his empire.
+                </p>
+            </div>
+
+            <div id="artChart">
+
+                <div class="chartSquare">
+                    <h1>Founder</h1>
+                    <img src="imgs/chart/sumerF.png" alt="Sargon of Akkad">
+                </div>
+
+                <div class="chartSquare">
+                    <h1>Gods</h1>
+                    
+                    <p>An</p>
+                    <p>Inanna</p>
+                    <p>Utu</p>
+                    <p>Enlil</p>
+                    <p>Enki</p>
+                                    
+                </div>
+
+                <div class="chartSquare">
+                    <h1>Rivals</h1>
+
+                    <p>Gutian Tribes</p>
+                    <p>Amorite Tribes</p>
+                    <p>Elam Kingdom</p>
+
+                </div>
+
+            </div>
+
+            <button class="buttonAddCart">Add to Cart</button>
+
+        </section>
+        
+        <!-- END OF SECTION - BUTTON TO SCROLL TOP -->
+
+        <button onclick="topFunction()" class="pageBut">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <!-- ===== ASSYRIAN HISTORY SECTION ===== -->
         
         <section class="artInformation">
 
-            <div class="artTitle">
+            <div class="artTitle" id="sectionAssyria">
                 <img src="imgs/icons/iconAssyria.png">
                 <h1>The Mighty Assyrian Empire</h1>
             
@@ -155,7 +243,12 @@
             <button class="buttonAddCart">Add to Cart</button>
 
         </section>
-        
+    
+        <!-- END OF SECTION - BUTTON TO SCROLL TOP -->
+
+        <button onclick="topFunction()" class="pageBut">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
         
     </main>   
             

@@ -212,11 +212,11 @@ h4 {
 /* GENERAL RULES */
 
 .orbisGal {
-    margin-top: 4vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  margin-top: 4vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* TITLE */
 
@@ -328,11 +328,11 @@ div.artInfoFirst {
 }
 
 #artImg > a:hover {
-    border: 2px solid rgb(117, 114, 65);
+  border: 2px solid rgb(117, 114, 65);
 }
 
 #artImg > a > img:hover {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 #artImg > a > img {
@@ -409,6 +409,11 @@ CHART | LEANDER | GODS | RIVALS ===== */
   height: 24vh;
   width: 24vh;
   margin-top: 6vh;
+}
+
+.chartSquare > img.twoImgs {
+  height: 30vh;
+  width: 30vh;
 }
 
 .chartSquare > h1 {

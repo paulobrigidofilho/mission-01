@@ -203,8 +203,15 @@ h4 {
   margin-left: 4px;
 }
 
+.numbersBut {
+  font-size: 20px;
+  align-items: center;
+  padding: 1vh;
+  margin-left: 6px;
+}
+
 .interactionBut:hover {
-  cursor: pointer;
+  background-color: rgba(32, 32, 19, 0.934);
 }
 
 /* ===== NAV AND HEAD - ARTWORK | ICONS / BUTTONS ===== */
@@ -505,6 +512,7 @@ fieldset > div {
 }
 
 textarea {
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-family: "Merriweather", serif;
   padding: 5px 5px;

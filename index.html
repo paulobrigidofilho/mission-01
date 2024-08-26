@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="app.js"></script>
+    <script src="app.js" defer></script>
 
     <title>Orbis History Maps</title>
   </head>
@@ -100,53 +100,9 @@
           <!-- ===== INTERACTION NAV BAR ===== -->
 
           <div class="interactionNav">
-            <button class="interactionBut" id="likesData">
-              <i class="fa-regular fa-thumbs-up"></i>
-            </button>
+            <span id="likesData" class="numbersBut">0</span> <button id="likesBut" class="interactionBut fa-regular fa-thumbs-up"></button>
 
-            <button class="interactionBut" id="commentsData">
-              <i class="fa-regular fa-comment"></i>
-            </button>
-          </div>
-        </article>
-
-        <article class="postBlog">
-          <div class="articleDiv">
-            <h2 class="articleTitle">Subject</h2>
-            <h3 class="articleAuthor">by Orbis</h3>
-            <h4 class="articleDate">Date</h4>
-            <p class="articleCont">
-              "At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident, similique sunt in culpa qui officia deserunt mollitia
-              animi, id est laborum et dolorum fuga. Et harum quidem rerum
-              facilis est et expedita distinctio. Nam libero tempore, cum soluta
-              nobis est eligendi optio cumque nihil impedit quo minus id quod
-              maxime placeat facere possimus, omnis voluptas assumenda est,
-              omnis dolor repellendus. Temporibus autem quibusdam et aut
-              officiis debitis aut rerum necessitatibus saepe eveniet ut et
-              voluptates repudiandae sint et molestiae non recusandae. Itaque
-              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-              voluptatibus maiores alias consequatur aut perferendis doloribus
-              asperiores repellat."
-            </p>
-            <p id="viewsData">
-              0
-              <i class="fa-regular fa-eye"></i>
-            </p>
-          </div>
-
-          <!-- ===== INTERACTION NAV BAR ===== -->
-
-          <div class="interactionNav">
-            <button class="interactionBut" id="likesData">
-              <i class="fa-regular fa-thumbs-up"></i>
-            </button>
-
-            <button class="interactionBut" id="commentsData">
-              <i class="fa-regular fa-comment"></i>
-            </button>
+            <span class="numbersBut">0</span> <button class="interactionBut fa-regular bott fa-comment"></button>
           </div>
         </article>
 
@@ -157,7 +113,7 @@
             <i class="fa-solid fa-bars"></i>
           </button>
 
-          <button onclick="topFunction()" class="pageBut">
+          <button class="scrollUpBut pageBut">
             <i class="fa-solid fa-arrow-up"></i>
           </button>
         </div>

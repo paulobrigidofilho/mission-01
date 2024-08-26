@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="app.js"></script>
+        <script src="app.js" defer></script>
 
         <title>Orbis Artwork</title>
     </head>
@@ -39,39 +39,29 @@
 
         <nav class="galleryNav">
 
-            <button class="galleryBut">
-                <a onClick="document.getElementById('sectionSumer').scrollIntoView();">
-                    <img src="imgs/icons/iconSumer.png" alt="Sumer & Akkad Map">
-                </a>
+            <button id="sumerBut" class="galleryBut">
+                <img src="imgs/icons/iconSumer.png" alt="Sumer & Akkad Map">
                 <div class="desc">Sumer & Akkad </br>Map</div>
             </button>
     
-            <button class="galleryBut">
-                    <a onClick="document.getElementById('sectionEgypt').scrollIntoView();">
-                        <img src="imgs/icons/iconEgypt.png" alt="Egypt & Kush Kingdoms Map">
-                    </a>
-                    <div class="desc">Egypt & Kush </br>Kingdoms Map</div>
+            <button id="egyptBut" class="galleryBut">
+                <img src="imgs/icons/iconEgypt.png" alt="Egypt & Kush Kingdoms Map">
+                <div class="desc">Egypt & Kush </br>Kingdoms Map</div>
             </button>
     
-            <button class="galleryBut">
-                <a onClick="document.getElementById('sectionAssyria').scrollIntoView();">
-                    <img src="imgs/icons/iconAssyria.png" alt="Assyrian Empire Map">
-                </a>
+            <button id="assyriaBut" class="galleryBut">
+                <img src="imgs/icons/iconAssyria.png" alt="Assyrian Empire Map">
                 <div class="desc">Assyrian Empire </br>Map</div>
             </button>
     
-            <button class="galleryBut">
-                <a onClick="document.getElementById('sectionHit').scrollIntoView();">
-                    <img src="imgs/icons/iconHit.png" alt="Achaeans vs Hittite Empire Map">
-                </a>
+            <button id="hitBut" class="galleryBut">
+                <img src="imgs/icons/iconHit.png" alt="Achaeans vs Hittite Empire Map">
                 <div class="desc">Hittite Empire vs</br>Achaeans Map</div>
             </button>  
                 
-            <button class="galleryBut">
-                    <a onClick="document.getElementById('sectionNZ').scrollIntoView();">
-                        <img src="imgs/icons/IconNZ.png" alt="New Zealand Map">
-                    </a>
-                    <div class="desc">New Zealand </br>Map</div>
+            <button id="nzBut" class="galleryBut">
+                <img src="imgs/icons/IconNZ.png" alt="New Zealand Map">
+                <div class="desc">New Zealand </br>Map</div>
             </button>
 
         </nav>
@@ -156,7 +146,7 @@
         
         <!-- END OF SECTION - BUTTON TO SCROLL TOP -->
 
-        <button onclick="topFunction()" class="pageBut">
+        <button class="scrollUpBut pageBut">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
 
@@ -242,7 +232,7 @@
         
         <!-- END OF SECTION - BUTTON TO SCROLL TOP -->
 
-        <button onclick="topFunction()" class="pageBut">
+        <button class="scrollUpBut pageBut">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
 
@@ -322,7 +312,7 @@
         
         <!-- END OF SECTION - BUTTON TO SCROLL TOP -->
 
-        <button onclick="topFunction()" class="pageBut">
+        <button class="scrollUpBut pageBut">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
 
@@ -407,7 +397,7 @@
     
         <!-- END OF SECTION - BUTTON TO SCROLL TOP -->
 
-        <button onclick="topFunction()" class="pageBut">
+        <button class="scrollUpBut pageBut">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
         
@@ -485,7 +475,7 @@
     
         <!-- END OF SECTION - BUTTON TO SCROLL TOP -->
 
-        <button onclick="topFunction()" class="pageBut">
+        <button class="scrollUpBut pageBut">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
        

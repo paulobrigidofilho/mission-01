@@ -247,6 +247,7 @@ h4 {
 }
 
 #deleteIcon:hover {
+  cursor: pointer;
   color: rgb(230, 221, 105);
 }
 

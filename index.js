@@ -72,17 +72,12 @@ commentButton.addEventListener("click", () => {
 
 const commentsTotal = [];
 
-// ===== Event listener to Submit button ===== //
-
-const submitButton = document.getElementById("userSubmitMsg");
-submitButton.addEventListener("click", addComment);
-
 // ======================================== //
 //              addComment Function
 // ======================================== //
 
 function addComment(event) {
-  // Prevent the default behaviour of our button to refresh the page
+  // Prevent the default behavior of our button to refresh the page
   event.preventDefault();
 
   // =====  Create an object and then add it to the commentsTotal array ===== //
@@ -110,6 +105,11 @@ function addComment(event) {
   // =====  Update the comment counter ===== //
   commentData.textContent = commentsTotal.length;
 }
+
+// ===== Event listener to Submit button ===== //
+
+const submitButton = document.getElementById("userSubmitMsg");
+submitButton.addEventListener("click", addComment);
 
 // ======================================================================================//
 

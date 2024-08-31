@@ -29,7 +29,7 @@ scrollUpButtons.forEach((button) => {
 // //              GALLERY NAV BAR             //
 // // ======================================== //
 
-// // ==== Gallery - HTML Elements ===== //
+// // ==== Gallery Elements ===== //
 
 const buttons = ["sumerBut", "egyptBut", "assyriaBut", "hitBut", "nzBut"];
 const sections = [

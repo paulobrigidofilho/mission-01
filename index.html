@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>Orbis History Maps</title>
   </head>
@@ -102,8 +95,23 @@
           <div class="interactionNav">
             <span id="likesData" class="numbersBut">0</span> <button id="likesBut" class="interactionBut fa-regular fa-thumbs-up"></button>
 
-            <span class="numbersBut">0</span> <button class="interactionBut fa-regular bott fa-comment"></button>
+            <span id="commentData" class="numbersBut">0</span> <button id="commentBut" class="interactionBut fa-regular bott fa-comment"></button>
           </div>
+
+
+          <!-- ====== HIDDEN COMMENT SECTION ====== -->
+
+          <div class="comment-section">
+            <div id="comments-container"></div>
+            <div id="to-comment-container">
+              <h1>Leave your comment ✉️</h1>
+              <input id="userName" type="text" placeholder="Type your nickname" maxlength="18">
+              <textarea id="userComment" type="text" placeholder="Leave your comment here" maxlength="1000"></textarea>
+              <input id="userSubmitMsg" type="submit" value="Submit"/>
+            </div>
+          </div>
+
+
         </article>
 
         <!-- ===== END OF PAGE NAV BAR ===== -->

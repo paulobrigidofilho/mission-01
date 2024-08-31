@@ -214,6 +214,71 @@ h4 {
   background-color: rgba(32, 32, 19, 0.934);
 }
 
+.comment-section {
+  display: none;
+}
+
+#noComments {
+  border-top: 2px solid darkkhaki;
+  text-align: center;
+  padding: 10vh;
+}
+
+/* ===== HIDDEN COMMENTS SECTION ===== */
+
+/* ===== COMMENTS SECTION ===== */
+
+#comments-container {
+  background-color: rgba(32, 32, 19, 0.934);
+  color: rgb(173, 168, 97);
+  display: flex;
+  flex-direction: column;
+}
+
+#commentDisplay {
+  border-top: 2px solid darkkhaki;
+  padding: 2vh;
+}
+
+#deleteIcon {
+  font-size: 25px;
+  margin: 2vh;
+  text-align: end;
+}
+
+#deleteIcon:hover {
+  color: rgb(230, 221, 105);
+}
+
+/* ===== TO COMMENTS SECTION ===== */
+
+#to-comment-container {
+  background-color: black;
+  border-top: 2px solid darkkhaki;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#userComment {
+  height: 20vh;
+  width: 65vh;
+  margin-top: 0;
+  padding: 1vh;
+}
+
+#userName {
+  height: 6vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1vh;
+}
+
+#userSubmitMsg {
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+
 /* ===== NAV AND HEAD - ARTWORK | ICONS / BUTTONS ===== */
 
 /* GENERAL RULES */

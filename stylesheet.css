@@ -597,12 +597,14 @@ CHART | LEANDER | GODS | RIVALS ===== */
 }
 
 #item-name {
-  margin-top: 6px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
 #shop-item-buttons {
-  margin-top: 1vh;
+  margin-top: 0vh;
   margin-bottom: 1vh;
 }
 
@@ -611,6 +613,12 @@ CHART | LEANDER | GODS | RIVALS ===== */
   font-size: 14px;
   margin-top: -30px;
   padding: 10px;
+}
+
+#item-price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -8px;
 }
 
 /* ===== SHOP CART MINI DISPLAY ===== */

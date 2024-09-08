@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create child elements for each property
     const itemName = document.createElement("p");
     itemName.classList.add("item-name");
-    itemName.textContent = `Name: ${item.name}`;
+    itemName.textContent = `${item.name}`;
 
     const itemResolution = document.createElement("p");
     itemResolution.classList.add("item-resolution");

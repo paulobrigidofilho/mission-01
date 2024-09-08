@@ -573,52 +573,52 @@ CHART | LEANDER | GODS | RIVALS ===== */
 /* ===== SHOP Items Display ====== */
 
 #shop-item-display {
+  display: flex;
+  flex-wrap: wrap;
   padding: 8vh;
+  gap: 8vh;
 }
 
-#shop-item {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-  border: 2px solid darkkhaki;
-  height: fit-content;
-  width: fit-content;
-}
-
-#shop-item-description {
-  border-top: 2px solid darkkhaki;
+.shop-item {
   background-color: rgba(36, 36, 20, 0.934);
+  border: 2px solid darkkhaki;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  justify-items: center;
+  align-items: center;  
+  width: 60vh;
+  padding: 10px;
+  height: 50vh;
 }
 
-#item-name {
+.item-name {
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 40px;
 }
 
-#shop-item-buttons {
+.shop-item-buttons {
   margin-top: 0vh;
-  margin-bottom: 1vh;
+  margin-bottom: 0vh;
 }
 
-#item-format,
-#item-resolution {
+.item-format,
+.item-resolution {
   font-size: 14px;
   margin-top: -30px;
   padding: 10px;
 }
 
-#item-price {
+.item-price {
   font-weight: bold;
   font-size: 20px;
   margin-top: -8px;
+}
+
+.item-description {
+  font-size: 12px;
+  margin-top: -10px;
 }
 
 /* ===== SHOP CART MINI DISPLAY ===== */

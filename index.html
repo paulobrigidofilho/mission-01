@@ -18,12 +18,21 @@
   <!-- ====== NAVIGATION BAR ====== -->
   <body>
     <header>
+      <!-- Links of the Page -->
       <nav>
         <a href="index.html">Home</a>
         <a href="artwork.html">Artwork</a>
         <a href="store.html">Store</a>
         <a href="send-message.html">Send Your Message</a>
+
+        <!-- Cart and User Profile Buttons -->
+        <!-- SHOPPING AND PROFILE -->
+        <nav class="userNav">
+          <a href="#" class="fa-solid fa-cart-shopping"></a>
+          <a href="#" class="fa-solid fa-user"></a>
+        </nav>
       </nav>
+
     </header>
 
     <!-- ====== MAIN PAGE ====== -->
@@ -107,9 +116,9 @@
             </div>
             <div id="to-comment-container">
               <h1>Leave your comment ✉️</h1>
-              <input id="userName" type="text" placeholder="Type your nickname" maxlength="18">
-              <textarea id="userComment" type="text" placeholder="Leave your comment here" maxlength="1000"></textarea>
-              <input id="userSubmitMsg" type="submit" value="Submit"/>
+              <input id="userName" type="text" placeholder="Type your nickname" maxlength="20">
+              <textarea id="userComment" type="text" placeholder="Leave your comment here (max. 1000 characters)" maxlength="1000"></textarea>
+              <input class="page-button" id="userSubmitMsg" type="submit" value="Submit"/>
             </div>
           </div>
 

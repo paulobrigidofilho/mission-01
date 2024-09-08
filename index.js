@@ -1,5 +1,5 @@
 // ======================================== //
-//              INDEX HTML                  //
+//              INDEX JS                    //
 // ======================================== //
 
 // ======================================== //
@@ -42,9 +42,9 @@ const likesBut = document.getElementById("likesBut");
 let likesCount = 0;
 
 likesBut.addEventListener("click", () => {
-    likesCount++;
-    likesData.textContent = likesCount;
-  });
+  likesCount++;
+  likesData.textContent = likesCount;
+});
 
 // ======================================================================================//
 
@@ -63,6 +63,9 @@ const commentsDisplay = document.getElementById("comments-container");
 
 // ===== Hidden Comments Section - Open when you click the Comments Button ===== //
 
+//  Clicking the commentButton checks if the comments are currently visible ("block").
+//  If they are, the button hides them ("none"). If they are hidden, the button shows them ("block").
+
 commentButton.addEventListener("click", () => {
   commentSection.style.display =
     commentSection.style.display === "block" ? "none" : "block";
@@ -77,8 +80,7 @@ const commentsTotal = [];
 // ======================================== //
 
 function addComment(event) {
-  // Prevent the default behavior of our button to refresh the page
-  event.preventDefault();
+  event.preventDefault(); // Prevent the default behavior of our button to refresh the page
 
   // =====  Create an object and then add it to the commentsTotal array ===== //
   const commentToAdd = {
@@ -125,8 +127,7 @@ function displayCommentsTotal() {
   if (commentsTotal.length === 0) {
     commentsDisplay.innerHTML = `<tag id="noComments">No comments have been made yet...</br></br> Be the first to comment!</tag>`;
   } else {
-
-  // ===== For each item in the commentsTotal array, display the comment =====
+    // ===== For each item in the commentsTotal array, display the comment =====
     for (let i = 0; i < commentsTotal.length; i++) {
       const comment = commentsTotal[i];
       commentsDisplay.innerHTML += `
@@ -151,14 +152,12 @@ function displayCommentsTotal() {
 
 function deleteComment(indexOfItemToDelete) {
   commentsTotal.splice(indexOfItemToDelete, 1);
-  
+
   // Test
   // console.log("Index of the item to Delete: ", indexOfItemToDelete);
-  
+
   // ===== Call the function that will re-render the array onto the page with new updates =====
   displayCommentsTotal();
 }
 
 // ======================================================================================//
-
-

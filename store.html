@@ -1,48 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="#" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-        <link rel="stylesheet" href="stylesheet.css">
-        <script src="#" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <title>Orbis Store</title>
+  </head>
 
-        <title>Orbis Store</title>
-    </head>
+  <!-- ======= THIS IS THE STORE PAGE ======== -->
 
-<!-- ======= THIS IS THE STORE PAGE ======== -->
+  <!-- ====== NAVIGATION BAR ====== -->
+  <body>
+    <header>
+      <!-- Links of the Page -->
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="artwork.html">Artwork</a>
+        <a href="store.html">Store</a>
+        <a href="send-message.html">Send Your Message</a>
 
-<!-- ====== NAVIGATION BAR ====== -->
-    <body>
-        <header>            
-                            
-            <nav>  
-                <a href="index.html">Home</a>
-                <a href="artwork.html">Artwork</a>
-                <a href="store.html">Store</a>
-                <a href="send-message.html">Send Your Message</a>
-            </nav>
-
+        <!-- Cart and User Profile Buttons -->
+        <!-- SHOPPING AND PROFILE -->
+        <nav class="userNav">
+          <a href="#" class="fa-solid fa-cart-shopping"></a>
+          <a href="#" class="fa-solid fa-user"></a>
+        </nav>
+      </nav>
     </header>
 
     <!-- ====== MAIN PAGE ====== -->
 
-     <main>
+    <main>
+      <!-- SHOP Nav Bar - HEADER and Search in SHOP Field -->
+      <section id="shop-intro-section">
+        <div>
+          <h1 class="bigHead">Welcome to Orbis Shop</h1>
+        </div>
 
-     </main> 
-            
+        <div id="search-items">
+          <input
+            id="searchProduct"
+            type="text"
+            placeholder="Search"
+            maxlength="100"
+          />
+          <button
+            id="searchButton"
+            class="fa-solid fa-magnifying-glass"
+          ></button>
+        </div>
+      </section>
+
+      <!-- SHOP Items Display and Filter -->
+
+      <section id="shop-items-container">
+        <!-- FILTER SECTION -->
+        <nav id="shop-filter">
+          Sort By <i class="fa-solid fa-arrow-right"></i>
+        </nav>
+        <!-- PRODUCT DISPLAY SECTION -->
+        <div id="shop-item-display">
+          <div id="shop-item">
+            <div id="shop-item-img">
+              <div id="item-img">
+                <img
+                  src="imgs/art/sumer-min.jpg"
+                  alt="Sumer & Akkad Map"
+                  width="400px"
+                  height="300px"
+                />
+              </div>
+              <div id="item-gallery-img">
+                <img
+                  src="imgs/art/sumer-min.jpg"
+                  alt="Sumer & Akkad Map"
+                  width="60px"
+                  height="60px"
+                />
+                <img
+                  src="imgs/art/sumer-min.jpg"
+                  alt="Sumer & Akkad Map"
+                  width="60px"
+                  height="60px"
+                />
+                <img
+                  src="imgs/art/sumer-min.jpg"
+                  alt="Sumer & Akkad Map"
+                  width="60px"
+                  height="60px"
+                />
+                <img
+                  src="imgs/art/sumer-min.jpg"
+                  alt="Sumer & Akkad Map"
+                  width="60px"
+                  height="60px"
+                />
+              </div>
+            </div>
+            <div id="shop-item-description">
+              <p id="item-name">Sumer & Akkad Map</p>
+              <p id="item-resolution">Resolution: 7016 x 4961 pixels 300 dpi</p>
+              <p id="item-format">Format: A2 (420 x 594 mm)</p>
+
+              <div id="shop-item-buttons">
+                <button class="page-button">View More</button>
+                <button class="page-button">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOP CART MINI DISPLAY -->
+      <section id="shop-cart-mini-display">
+        <div id="cart-current-items-display">
+          <p class="cart-price-display">Order Summary</p>
+          
+        </div>
+
+        <div id="cart-current-total-display">
+          <p class="cart-price-display" id="cart-subTotal">Sub-Total:</p>
+          <p class="cart-price-display" id="cart-shipTotal">Shipping:</p>
+          <p class="cart-price-display" id="cart-total">Total:</p>
+
+          <div id="cart-final-buttons">
+            <button class="page-button" id="cart-checkout">Checkout ()</button>
+            <button class="page-button" id="cart-return">Return to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- ====== FOOTER ====== -->
 
     <footer>
-        <p>&copy; 2021 - Orbis History Maps
-            <a target="_blank" href="https://instagram.com/orbishistorymaps"><i class="fa-brands fa-square-instagram fa-lg"></i>
-            </a>
-        </p>        
+      <p>
+        &copy; 2021 - Orbis History Maps
+        <a target="_blank" href="https://instagram.com/orbishistorymaps"
+          ><i class="fa-brands fa-square-instagram fa-lg"></i>
+        </a>
+      </p>
     </footer>
-
-    </body>
+  </body>
 </html>

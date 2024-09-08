@@ -1,5 +1,5 @@
 // ======================================== //
-//              ARTWORK HTML                //
+//              ARTWORK JS                  //
 // ======================================== //
 
 // ======================================== //
@@ -29,8 +29,6 @@ scrollUpButtons.forEach((button) => {
 // //              GALLERY NAV BAR             //
 // // ======================================== //
 
-// // ==== Gallery Elements ===== //
-
 const buttons = ["sumerBut", "egyptBut", "assyriaBut", "hitBut", "nzBut"];
 const sections = [
   "sectionSumer",
@@ -40,13 +38,11 @@ const sections = [
   "sectionNZ",
 ];
 
-// // ======================================================================================//
-
-buttons.forEach((buttonId, index) => {
+buttons.forEach((buttonId, index) => {      // The loop iterates over each button ID and its index. (sections)
   const button = document.getElementById(buttonId);
   const section = document.getElementById(sections[index]);
 
   button.addEventListener("click", () => {
-    window.scrollTo({ top: section.offsetTop, behavior: "smooth" });
-  });
+    window.scrollTo({ top: section.offsetTop, behavior: "smooth" });  // The top property is set to the offsetTop of the section element,
+  });                                                                 //  which is the vertical position of the section relative to the document.
 });

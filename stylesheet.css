@@ -41,7 +41,19 @@ nav > a {
 
 nav > a:hover {
   background: rgb(31, 30, 22);
+  color: rgb(230, 221, 105);
   cursor: pointer;
+}
+
+/* ===== USER NAV MENU BUTTONS ===== */
+
+nav > .userNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
 }
 
 /* ===== INDEX PAGE - INTRODUCTION AND QUOTE OF THE DAY ===== */
@@ -293,7 +305,7 @@ h4 {
 
 /* TITLE */
 
-#galleryHead {
+.bigHead {
   font-size: 50px;
   margin-top: 6vh;
   margin-bottom: 10vh;
@@ -523,6 +535,142 @@ CHART | LEANDER | GODS | RIVALS ===== */
   background-color: rgb(238, 36, 36);
 }
 
+/* ===== STORE PAGE ===== */
+
+/* ===== SHOP Nav Bar - HEADER and Search in SHOP Field ===== */
+
+#search-items {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#searchButton {
+  background-color: black;
+  color: darkkhaki;
+  border: 0px;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+#searchButton:hover {
+  color: rgb(230, 221, 105);
+}
+
+/* ===== SHOP Items Display and Filter ===== */
+
+#shop-filter {
+  justify-content: left;
+  border: 2px solid darkkhaki;
+  padding: 10px;
+  gap: 6px;
+}
+
+#shop-filter:hover {
+  color: rgb(230, 221, 105);
+}
+
+/* ===== SHOP Items Display ====== */
+
+#shop-item-display {
+  padding: 8vh;
+}
+
+#shop-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  border: 2px solid darkkhaki;
+  height: fit-content;
+  width: fit-content;
+}
+
+#shop-item-description {
+  border-top: 2px solid darkkhaki;
+  background-color: rgba(36, 36, 20, 0.934);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#item-name {
+  margin-top: 6px;
+  margin-bottom: 40px;
+}
+
+#shop-item-buttons {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+#item-format,
+#item-resolution {
+  font-size: 14px;
+  margin-top: -30px;
+  padding: 10px;
+}
+
+/* ===== SHOP CART MINI DISPLAY ===== */
+
+#shop-cart-mini-display {
+  display: grid;
+  grid-template-columns: 70% 30%; /* Adjust column widths as needed */
+  background-color: rgba(36, 36, 20, 0.934);
+  border: 2px solid darkkhaki;
+}
+
+#cart-current-total-display {
+  border-left: 2px solid darkkhaki;
+}
+
+.cart-price-display {
+  margin-left: 2vh;
+}
+
+#cart-final-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 4vh;
+}
+
+.page-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Merriweather", serif;
+  border: 2px solid darkkhaki;
+  background-color: rgb(0, 0, 0);
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 120px;
+  color: darkkhaki;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.page-button:hover {
+  background-color: rgb(31, 30, 22);
+  color: rgb(230, 221, 105);
+  border-radius: 3px;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+
+#cart-checkout {
+  background-color: rgb(34, 135, 34);
+  color: white;
+  border: 0px;
+}
+
+#cart-checkout:hover {
+  background-color: rgb(24, 192, 24);
+}
+
 /* ===== SEND US E-MAIL DIV ===== */
 
 #emailForm {
@@ -585,31 +733,6 @@ textarea {
   margin: 8px 0px;
   width: 345px;
   height: 250px;
-}
-
-/* ===== SUBMIT BUTTON ===== */
-
-input[type="submit"] {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-family: "Merriweather", serif;
-  border: 2px solid darkkhaki;
-  background-color: black;
-  padding: 8px 2px;
-  font-size: 15px;
-  font-weight: bold;
-  width: 90px;
-  color: darkkhaki;
-  text-align: center;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-
-input[type="submit"]:hover {
-  background-color: rgb(31, 30, 22);
-  color: rgb(213, 206, 105);
-  border-radius: 3px;
-  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.13);
-  cursor: pointer;
 }
 
 /* ===== ABOUT US DIV ===== */
@@ -690,6 +813,10 @@ p > a:hover {
     width: 100px;
   }
 
+  .userNav {
+    flex-direction: row;
+  }
+
   /* SECTION ART INFORMATION RESPONSIVE */
 
   .artInformation {
@@ -698,7 +825,7 @@ p > a:hover {
     margin-top: 20px;
   }
 
-  #galleryHead {
+  .bigHead {
     font-size: 34px;
     margin-bottom: 20px;
   }
@@ -768,5 +895,10 @@ p > a:hover {
 
   .chartSquare > h1 {
     font-size: 26px;
+  }
+
+  /* SECTION SHOP Items Display and Filter */
+  #shop-filter {
+    flex-direction: row;
   }
 }

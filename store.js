@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const itemPrice = document.createElement("p");
     itemPrice.classList.add("item-price");
-    itemPrice.textContent = `Price: NDZ$ ${item.price}`;
+    itemPrice.textContent = `NDZ$ ${item.price}`;
 
     const itemDescription = document.createElement("p");
     itemDescription.classList.add("item-description");

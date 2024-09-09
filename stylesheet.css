@@ -645,9 +645,11 @@ CHART | LEANDER | GODS | RIVALS ===== */
 
 .item-description-header {
   margin-bottom: 10px;
+  text-shadow: 2px 2px 0px black;
 }
 
 .item-description {
+  font-style: italic;
   font-size: 14px;
   margin-top: 0px;
 }

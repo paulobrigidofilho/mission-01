@@ -34,7 +34,7 @@ const map1 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
-  "A2 (420 x 594 mm) / 7016 x 4961 pixels 300 dpi",
+  "A2 (420 x 594 mm) - 7016 x 4961 pixels 300 dpi",
   "This is the Sumerian & Akkad Map"
 );
 
@@ -44,7 +44,7 @@ const map2 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   250,
-  "A3 (420 x 297 mm) / 7016 x 4961 pixels 300 dpi",
+  "A3 (420 x 297 mm) - 7016 x 4961 pixels 300 dpi",
   "This is the Ancient Egypt and Kush Kingdoms Map"
 );
 
@@ -54,7 +54,7 @@ const map3 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   250,
-  "A3 (297 x 420 mm) / 4961 x 7016 pixels 300 dpi",
+  "A3 (297 x 420 mm) - 4961 x 7016 pixels 300 dpi",
   "This is the Clash of Worlds: Hittites vs Achaens Map"
 );
 
@@ -64,7 +64,7 @@ const map4 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
-  "A2 (420 x 594 mm) / 7016 x 4961 pixels 300 dpi",
+  "A2 (420 x 594 mm) - 7016 x 4961 pixels 300 dpi",
   "This is the Assyrian Empire Map"
 );
 
@@ -74,7 +74,7 @@ const map5 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
-  "A2 (420 x 594 mm) / 4961 x 7016 pixels 300 dpi",
+  "A2 (420 x 594 mm) - 4961 x 7016 pixels 300 dpi",
   "This is the Aotearoa New Zealand Map"
 );
 
@@ -128,17 +128,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const itemPrice = document.createElement("p");
     itemPrice.classList.add("item-price");
-    itemPrice.textContent = `NDZ$ ${item.price}`;
+    itemPrice.textContent = `NZD$ ${item.price}`;
 
     const itemSpecs = document.createElement("p");
     itemSpecs.classList.add("item-specs");
     itemSpecs.textContent = `Specifications: ${item.specs}`;
     itemSpecs.style.display = "none"; // Initially hidden
 
+    const itemDescriptionTitle = document.createElement("h3");
+    itemDescriptionTitle.textContent = "Full Description";
+    itemDescriptionTitle.classList.add("item-description-header")
+    itemDescriptionTitle.style.display ="none";
+
     const itemDescription = document.createElement("p");
     itemDescription.classList.add("item-description");
-    itemDescription.textContent = item.description;   
-    itemDescription.style.display = "none"; 
+    itemDescription.textContent = `${item.description}`;   
+
+    itemDescription.style.display = "none";
 
     // Append child elements to the shopItem
     shopGallery.appendChild(itemImage);
@@ -147,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
     shopInfo.appendChild(itemMaterial);
     shopInfo.appendChild(itemPrice);   
     shopInfo.appendChild(itemSpecs);
+    shopInfo.appendChild(itemDescriptionTitle);
     shopInfo.appendChild(itemDescription);
 
     // Create buttons
@@ -163,10 +170,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (itemSpecs.style.display === "none") {
               itemSpecs.style.display = "block";
               itemDescription.style.display = "block";
+              itemDescriptionTitle.style.display = "block";
               viewMoreButton.textContent = "View Less";
             } else {
               itemSpecs.style.display = "none";
               itemDescription.style.display = "none";
+              itemDescriptionTitle.style.display = "none";
               viewMoreButton.textContent = "View More";
             }
           });

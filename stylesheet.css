@@ -579,23 +579,37 @@ CHART | LEANDER | GODS | RIVALS ===== */
   gap: 8vh;
 }
 
-.shop-item {
+.shop-info {
   background-color: rgba(36, 36, 20, 0.934);
   border: 2px solid darkkhaki;
+  border-top: 0px;
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  align-items: center;  
+  justify-content: space-around;
+  align-items: center;
   width: 60vh;
   padding: 10px;
-  height: 50vh;
+  height: fit-content;
+}
+
+.shop-gallery {
+  border: 2px solid darkkhaki;
+  width: 60vh;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.item-image {
+  box-sizing: border-box;
+  width: 100%; /* Make the image fill the gallery's width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .item-name {
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
-  margin-bottom: 40px;
+  text-shadow: 2px 2px 0px black;
 }
 
 .shop-item-buttons {
@@ -603,10 +617,17 @@ CHART | LEANDER | GODS | RIVALS ===== */
   margin-bottom: 0vh;
 }
 
-.item-format,
-.item-resolution {
-  font-size: 14px;
-  margin-top: -30px;
+.item-category {
+  margin-top: -15px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.item-specs,
+.item-material {
+  font-size: 13px;
+  margin-top: -25px;
   padding: 10px;
 }
 
@@ -614,6 +635,7 @@ CHART | LEANDER | GODS | RIVALS ===== */
   font-weight: bold;
   font-size: 20px;
   margin-top: -8px;
+  text-shadow: 2px 2px 0px black;
 }
 
 .item-description {

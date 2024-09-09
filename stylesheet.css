@@ -641,10 +641,12 @@ CHART | LEANDER | GODS | RIVALS ===== */
   margin-top: -10px;
   font-size: 14px;
   text-align: center;
+  line-height: 2;
  }
 
 .item-description-header {
   margin-bottom: 10px;
+  margin-top: 0px;
   text-shadow: 2px 2px 0px black;
 }
 

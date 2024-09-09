@@ -34,7 +34,7 @@ const map1 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
-  "A2 (420 x 594 mm) - 7016 x 4961 pixels 300 dpi",
+  "A2 (420 x 594 mm) - 7016 x 4961 pixels 300 dpi - Museum Quality Fine Art",
   "This is the Sumerian & Akkad Map"
 );
 
@@ -44,7 +44,7 @@ const map2 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   250,
-  "A3 (420 x 297 mm) - 7016 x 4961 pixels 300 dpi",
+  "A3 (420 x 297 mm) - 7016 x 4961 pixels 300 dpi - Museum Quality Fine Art",
   "This is the Ancient Egypt and Kush Kingdoms Map"
 );
 
@@ -54,7 +54,7 @@ const map3 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   250,
-  "A3 (297 x 420 mm) - 4961 x 7016 pixels 300 dpi",
+  "A3 (297 x 420 mm) - 4961 x 7016 pixels 300 dpi - Museum Quality Fine Art",
   "This is the Clash of Worlds: Hittites vs Achaens Map"
 );
 
@@ -64,7 +64,7 @@ const map4 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
-  "A2 (420 x 594 mm) - 7016 x 4961 pixels 300 dpi",
+  "A2 (420 x 594 mm) - 7016 x 4961 pixels 300 dpi - Museum Quality Fine Art",
   "This is the Assyrian Empire Map"
 );
 
@@ -74,7 +74,7 @@ const map5 = new ShoppingItem(
   "Artistic Map",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
-  "A2 (420 x 594 mm) - 4961 x 7016 pixels 300 dpi",
+  "A2 (420 x 594 mm) - 4961 x 7016 pixels 300 dpi - Museum Quality Fine Art",
   "This is the Aotearoa New Zealand Map"
 );
 

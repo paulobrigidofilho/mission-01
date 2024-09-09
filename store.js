@@ -13,13 +13,13 @@ const addToCart = document.getElementById("addToCart"); // Use getElementById
 // ===== Creating a Products Array ===== //
 
 class ShoppingItem {
-  constructor(image, name, category, specs, material, price, description) {
+  constructor(image, name, category, material, price, specs, description) {
     this.image = image;
     this.name = name;
     this.category = category;
-    this.specs = specs;
     this.material = material;
     this.price = price;
+    this.specs = specs;
     this.description = description;
   }
 }
@@ -32,9 +32,9 @@ const map1 = new ShoppingItem(
   "imgs/shop-items/sumershop1.jpg",
   "Sumer & Akkad",
   "Artistic Map",
-  "A2 (420 x 594 mm) / 7016 x 4961 pixels 300 dpi",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
+  "A2 (420 x 594 mm) / 7016 x 4961 pixels 300 dpi",
   "This is the Sumerian & Akkad Map"
 );
 
@@ -42,9 +42,9 @@ const map2 = new ShoppingItem(
   "imgs/shop-items/egyptshop1.jpg",
   "Ancient Egypt & Kush Kingdoms",
   "Artistic Map",
-  "A3 (420 x 297 mm) / 7016 x 4961 pixels 300 dpi",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   250,
+  "A3 (420 x 297 mm) / 7016 x 4961 pixels 300 dpi",
   "This is the Ancient Egypt and Kush Kingdoms Map"
 );
 
@@ -52,9 +52,9 @@ const map3 = new ShoppingItem(
   "imgs/shop-items/hitshop1.jpg",
   "Clash of Worlds: Hittites vs Achaens",
   "Artistic Map",
-  "A3 (297 x 420 mm) / 4961 x 7016 pixels 300 dpi",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   250,
+  "A3 (297 x 420 mm) / 4961 x 7016 pixels 300 dpi",
   "This is the Clash of Worlds: Hittites vs Achaens Map"
 );
 
@@ -62,9 +62,9 @@ const map4 = new ShoppingItem(
   "imgs/shop-items/assyriashop1.jpg",
   "Assyrian Empire",
   "Artistic Map",
-  "A2 (420 x 594 mm) / 7016 x 4961 pixels 300 dpi",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
+  "A2 (420 x 594 mm) / 7016 x 4961 pixels 300 dpi",
   "This is the Assyrian Empire Map"
 );
 
@@ -72,9 +72,9 @@ const map5 = new ShoppingItem(
   "imgs/shop-items/nzshop1.jpg",
   "Aotearoa New Zealand",
   "Artistic Map",
-  "A2 (420 x 594 mm) / 4961 x 7016 pixels 300 dpi",
   "Fine Art Smooth Cotton Rag 330gsm Matte",
   350,
+  "A2 (420 x 594 mm) / 4961 x 7016 pixels 300 dpi",
   "This is the Aotearoa New Zealand Map"
 );
 
@@ -122,11 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
     itemCategory.classList.add("item-category");
     itemCategory.textContent = `${item.category}`;
 
-    const itemSpecs = document.createElement("p");
-    itemSpecs.classList.add("item-specs");
-    itemSpecs.textContent = `Specifications: ${item.specs}`;
-    itemSpecs.style.display = "none"; // Initially hidden
-
     const itemMaterial = document.createElement("p");
     itemMaterial.classList.add("item-material");
     itemMaterial.textContent = `${item.material}`;
@@ -134,6 +129,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const itemPrice = document.createElement("p");
     itemPrice.classList.add("item-price");
     itemPrice.textContent = `NDZ$ ${item.price}`;
+
+    const itemSpecs = document.createElement("p");
+    itemSpecs.classList.add("item-specs");
+    itemSpecs.textContent = `Specifications: ${item.specs}`;
+    itemSpecs.style.display = "none"; // Initially hidden
 
     const itemDescription = document.createElement("p");
     itemDescription.classList.add("item-description");
@@ -144,9 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
     shopGallery.appendChild(itemImage);
     shopInfo.appendChild(itemName);
     shopInfo.appendChild(itemCategory);
-    shopInfo.appendChild(itemSpecs);
     shopInfo.appendChild(itemMaterial);
-    shopInfo.appendChild(itemPrice);
+    shopInfo.appendChild(itemPrice);   
+    shopInfo.appendChild(itemSpecs);
     shopInfo.appendChild(itemDescription);
 
     // Create buttons

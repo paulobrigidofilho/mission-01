@@ -624,7 +624,6 @@ CHART | LEANDER | GODS | RIVALS ===== */
   font-style: italic;
 }
 
-.item-specs,
 .item-material {
   font-size: 13px;
   margin-top: -25px;
@@ -638,9 +637,15 @@ CHART | LEANDER | GODS | RIVALS ===== */
   text-shadow: 2px 2px 0px black;
 }
 
-.item-description {
-  font-size: 12px;
+.item-specs {
   margin-top: -10px;
+  font-style: italic;
+  font-size: 13px;
+ }
+
+.item-description {
+  font-size: 14px;
+  margin-top: 0px;
 }
 
 /* ===== SHOP CART MINI DISPLAY ===== */
